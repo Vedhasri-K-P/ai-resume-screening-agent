@@ -1,0 +1,1 @@
+Build an AI-powered Resume Screening Agent that compares multiple resumes against a job description, extracts important candidate information, computes a relevance score using semantic similarity and weighted criteria, ranks applicants, and generates an explainable hiring recommendation.
