@@ -12,7 +12,7 @@ Instead of manually reading every resume, the application automatically extracts
 
 # Features
 
-- Reads resumes in PDF, DOCX and TXT formats.
+-Supports parsing resumes in PDF, DOCX and TXT formats.
 - Extracts important candidate information
   - Skills
   - Education
@@ -210,38 +210,46 @@ Contains the complete candidate information in JSON format.
 
 # Scoring Method
 
-The final score is calculated using multiple factors.
+The final score is calculated using the following weighted criteria:
 
-- Skill Match
-- Semantic Similarity
-- Experience
-- Education
-- Projects
+| Criteria | Weight |
+|----------|-------:|
+| Skill Match | 45% |
+| Semantic Similarity | 25% |
+| Experience | 15% |
+| Education | 10% |
+| Projects | 5% |
 
-Each factor contributes a weighted score.
+These weighted scores are combined to calculate the final candidate score.
 
-The combined score determines the final ranking.
-
-This makes the evaluation more balanced instead of relying only on keyword matching.
-
+Candidates are then ranked from highest to lowest score.
 ---
 
 # Similarity Calculation
 
-This project uses the Sentence Transformer model to convert both the resume and the Job Description into vector embeddings.
+The project uses the `sentence-transformers/all-MiniLM-L6-v2` embedding model to convert resumes and the Job Description into vector representations.
 
-Cosine Similarity is then used to calculate how closely the resume matches the Job Description.
-
-This allows the application to understand the overall meaning of the resume instead of matching only exact words.
-
+Cosine Similarity is then used to measure how closely each resume matches the Job Description based on semantic meaning rather than exact keyword matching.
 ---
+
+# Candidate Decision
+
+Based on the final score, candidates are classified into one of the following categories:
+
+| Final Score | Decision |
+|-------------|----------|
+| 70 and above | Shortlist |
+| 50 – 69.99 | Review |
+| Below 50 | Reject |
+
+This allows recruiters to quickly identify strong candidates while keeping promising applicants under review.
 
 # Assumptions
 
-- Resumes are provided in PDF format.
+- Resumes can be provided in PDF, DOCX or TXT format.
 - A Job Description is available before screening begins.
 - Candidates are ranked only against the provided Job Description.
-- The application processes all resumes present in the resume folder.
+- The application processes all resumes available in the resume folder.
 
 ---
 
@@ -263,14 +271,15 @@ These can be improved in future versions.
 
 Some possible improvements are:
 
-- Support DOCX resumes
-- Better resume parsing
 - OCR support for scanned resumes
-- Custom scoring weights
-- Web interface
+- Better resume parsing for different resume layouts
+- Configurable scoring weights
+- Web-based user interface
 - Recruiter dashboard
-- Better experience extraction
-- Candidate recommendation using Large Language Models
+- Improved experience extraction
+- Better name and education extraction
+- Support for additional resume formats such as HTML
+- AI-generated interview questions for shortlisted candidates
 
 ---
 
