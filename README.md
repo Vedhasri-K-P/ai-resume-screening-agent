@@ -12,7 +12,7 @@ Instead of manually reading every resume, the application automatically extracts
 
 # Features
 
-- Reads resumes in PDF format
+- Reads resumes in PDF, DOCX and TXT formats.
 - Extracts important candidate information
   - Skills
   - Education
@@ -252,7 +252,7 @@ This project works well for the challenge but still has a few limitations.
 - Resume parsing depends on the quality of the PDF.
 - Experience calculation can be improved.
 - Name extraction may fail for some resume formats.
-- Only PDF resumes are currently supported.
+- Currently supports PDF, DOCX and TXT resumes.
 - The scoring weights are fixed.
 
 These can be improved in future versions.
