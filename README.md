@@ -367,7 +367,6 @@ The application reduces manual effort and provides recruiters with a quick way t
 Although there is room for future improvement, the current implementation provides a complete end-to-end resume screening workflow suitable for the challenge.
 
 ---
----
 
 # License
 
