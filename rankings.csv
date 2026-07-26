@@ -1,0 +1,11 @@
+Rank,Candidate,File,Final Score,Similarity,Decision
+1,Ananya Rao,resume1.pdf,71.52,72.06,Shortlist
+2,Nikhil Reddy,resume4.pdf,62.75,70.98,Review
+3,Arjun Patel,resume6.pdf,57.6,60.39,Review
+4,Kavya Iyer,resume3.pdf,57.36,55.43,Review
+5,Siddharth Nair,resume8.pdf,54.23,62.94,Review
+6,Meera Joshi,resume7.pdf,49.54,56.16,Reject
+7,Rahul Mehta,resume2.pdf,48.48,51.91,Reject
+8,Neha Kulkarni,resume9.pdf,45.31,51.24,Reject
+9,Pooja Singh,resume5.pdf,34.95,51.8,Reject
+10,Vivek Sharma,resume10.pdf,31.87,39.46,Reject

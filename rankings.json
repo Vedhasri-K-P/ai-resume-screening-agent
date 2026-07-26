@@ -1,0 +1,264 @@
+[
+    {
+        "name": "Ananya Rao",
+        "file_name": "resume1.pdf",
+        "skills": [
+            "AWS",
+            "C",
+            "Docker",
+            "FastAPI",
+            "Git",
+            "GitHub",
+            "Kubernetes",
+            "Machine Learning",
+            "Python",
+            "REST API",
+            "SQL"
+        ],
+        "education": [
+            "B.E",
+            "Computer Science"
+        ],
+        "experience_years": 5,
+        "similarity": 72.06,
+        "skill_score": 55.56,
+        "experience_score": 100,
+        "education_score": 100,
+        "project_score": 70,
+        "final_score": 71.52,
+        "rank": 1,
+        "decision": "Shortlist"
+    },
+    {
+        "name": "Nikhil Reddy",
+        "file_name": "resume4.pdf",
+        "skills": [
+            "Apache NiFi",
+            "C",
+            "ETL",
+            "Git",
+            "GitHub",
+            "Metabase",
+            "Pandas",
+            "PostgreSQL",
+            "Python",
+            "SQL"
+        ],
+        "education": [
+            "B.E",
+            "Computer Science"
+        ],
+        "experience_years": 2,
+        "similarity": 70.98,
+        "skill_score": 50.0,
+        "experience_score": 60,
+        "education_score": 100,
+        "project_score": 70,
+        "final_score": 62.75,
+        "rank": 2,
+        "decision": "Review"
+    },
+    {
+        "name": "Arjun Patel",
+        "file_name": "resume6.pdf",
+        "skills": [
+            "C",
+            "Docker",
+            "FastAPI",
+            "Git",
+            "GitHub",
+            "PostgreSQL",
+            "Python",
+            "SQL"
+        ],
+        "education": [
+            "B.E",
+            "Computer Science"
+        ],
+        "experience_years": 2,
+        "similarity": 60.39,
+        "skill_score": 44.44,
+        "experience_score": 60,
+        "education_score": 100,
+        "project_score": 70,
+        "final_score": 57.6,
+        "rank": 3,
+        "decision": "Review"
+    },
+    {
+        "name": "Kavya Iyer",
+        "file_name": "resume3.pdf",
+        "skills": [
+            "AWS",
+            "C",
+            "Deep Learning",
+            "Git",
+            "GitHub",
+            "OpenCV",
+            "PyTorch",
+            "Python",
+            "TensorFlow"
+        ],
+        "education": [
+            "M.Tech"
+        ],
+        "experience_years": 6,
+        "similarity": 55.43,
+        "skill_score": 44.44,
+        "experience_score": 100,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 57.36,
+        "rank": 4,
+        "decision": "Review"
+    },
+    {
+        "name": "Siddharth Nair",
+        "file_name": "resume8.pdf",
+        "skills": [
+            "AWS",
+            "C",
+            "Docker",
+            "Git",
+            "GitHub",
+            "Java",
+            "Kubernetes",
+            "REST API"
+        ],
+        "education": [],
+        "experience_years": 7,
+        "similarity": 62.94,
+        "skill_score": 33.33,
+        "experience_score": 100,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 54.23,
+        "rank": 5,
+        "decision": "Review"
+    },
+    {
+        "name": "Meera Joshi",
+        "file_name": "resume7.pdf",
+        "skills": [
+            "C",
+            "Git",
+            "GitHub",
+            "Pandas",
+            "Power BI",
+            "Python",
+            "SQL",
+            "Tableau"
+        ],
+        "education": [
+            "B.Tech"
+        ],
+        "experience_years": 4,
+        "similarity": 56.16,
+        "skill_score": 33.33,
+        "experience_score": 80,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 49.54,
+        "rank": 6,
+        "decision": "Reject"
+    },
+    {
+        "name": "Rahul Mehta",
+        "file_name": "resume2.pdf",
+        "skills": [
+            "AWS",
+            "C",
+            "Docker",
+            "Git",
+            "GitHub",
+            "Java",
+            "SQL"
+        ],
+        "education": [
+            "B.Tech"
+        ],
+        "experience_years": 3,
+        "similarity": 51.91,
+        "skill_score": 33.33,
+        "experience_score": 80,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 48.48,
+        "rank": 7,
+        "decision": "Reject"
+    },
+    {
+        "name": "Neha Kulkarni",
+        "file_name": "resume9.pdf",
+        "skills": [
+            "C",
+            "Git",
+            "GitHub",
+            "LLM",
+            "Prompt Engineering",
+            "Python",
+            "RAG"
+        ],
+        "education": [
+            "B.E",
+            "Computer Science"
+        ],
+        "experience_years": 1,
+        "similarity": 51.24,
+        "skill_score": 22.22,
+        "experience_score": 60,
+        "education_score": 100,
+        "project_score": 70,
+        "final_score": 45.31,
+        "rank": 8,
+        "decision": "Reject"
+    },
+    {
+        "name": "Pooja Singh",
+        "file_name": "resume5.pdf",
+        "skills": [
+            "C",
+            "C++",
+            "CSS",
+            "Git",
+            "GitHub",
+            "HTML",
+            "Java",
+            "JavaScript"
+        ],
+        "education": [
+            "B.E"
+        ],
+        "experience_years": 0,
+        "similarity": 51.8,
+        "skill_score": 16.67,
+        "experience_score": 40,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 34.95,
+        "rank": 9,
+        "decision": "Reject"
+    },
+    {
+        "name": "Vivek Sharma",
+        "file_name": "resume10.pdf",
+        "skills": [
+            "C",
+            "Git",
+            "GitHub"
+        ],
+        "education": [
+            "B.E"
+        ],
+        "experience_years": 0,
+        "similarity": 39.46,
+        "skill_score": 16.67,
+        "experience_score": 40,
+        "education_score": 50,
+        "project_score": 70,
+        "final_score": 31.87,
+        "rank": 10,
+        "decision": "Reject",
+        "recommendation": "Overall Assessment:\nThe candidate, Vivek Sharma, does not meet the requirements of the job description, with a similarity score of 39.46% and a final score of 31.87%, indicating a significant gap in the required skills and experience.\n\nStrengths:\n- The candidate has a foundation in programming with skills in C, which could be beneficial in learning other programming languages.\n- The candidate has experience with Git and GitHub, which is essential for version control and collaboration.\n\nWeaknesses:\n- The candidate lacks experience in the required skills, including Python, SQL, PostgreSQL, Pandas, and Machine Learning, which are crucial for the Software Engineer role.\n- The candidate has no prior software development experience, which is a significant requirement for the position.\n\nRecommendation:\nI would not recommend Vivek Sharma for the Software Engineer \u2013 Python / Data Engineering position at this time due to the significant gap in required skills and experience. However, I would suggest considering him for an internship or a junior role where he can develop the necessary skills and gain experience, or providing training and development opportunities to help him bridge the gap."
+    }
+]

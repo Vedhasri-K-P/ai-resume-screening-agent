@@ -1,0 +1,42 @@
+Software Engineer – Python / Data Engineering
+
+We are looking for a Software Engineer to join our development team.
+
+Required Skills
+
+• Python
+• SQL
+• Git / GitHub
+• REST API
+• Docker
+• PostgreSQL
+• Pandas
+• Machine Learning
+
+Preferred Skills
+
+• FastAPI or Flask
+• Apache NiFi
+• ETL
+• AWS
+• Deep Learning
+• TensorFlow
+• PyTorch
+
+Qualifications
+
+• Bachelor's Degree in Computer Science, Information Science or a related Engineering discipline.
+
+Experience
+
+• 1–5 years of software development experience preferred.
+
+Responsibilities
+
+• Develop backend services using Python.
+• Build REST APIs.
+• Design SQL queries and work with PostgreSQL databases.
+• Develop ETL pipelines and data processing workflows.
+• Work with Docker and Git for deployment and version control.
+• Collaborate with the AI team on Machine Learning projects.
+• Write clean, maintainable and scalable code.
