@@ -6,13 +6,13 @@ This project is an AI-powered Resume Screening Agent developed as part of the **
 
 The purpose of this project is to help recruiters quickly compare multiple resumes against a given Job Description (JD) and rank candidates based on how well they match the required skills and qualifications.
 
-Instead of manually reading every resume, the application automatically extracts important information, compares it with the job description, calculates a relevance score, and generates a ranked list of candidates.
+Instead of manually reading every resume, the application automatically extracts important information, compares it against the job description, calculates a weighted relevance score, and generates a ranked list of candidates.
 
 ---
 
 # Features
 
--Supports parsing resumes in PDF, DOCX and TXT formats.
+- Supports parsing resumes in PDF, DOCX and TXT formats.
 - Extracts important candidate information
   - Skills
   - Education
@@ -136,6 +136,7 @@ The application follows a modular pipeline where each component is responsible f
                                │
                                ▼
                  CSV & JSON Result Export
+```
 
 ---
 
@@ -143,7 +144,7 @@ The application follows a modular pipeline where each component is responsible f
 
 - Python
 - Sentence Transformers
-- Hugging Face
+- Hugging Face Transformers
 - Scikit-Learn
 - PyPDF2
 - Rich (Console Output)
@@ -156,7 +157,7 @@ The application follows a modular pipeline where each component is responsible f
 Clone the repository.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/<your-username>/AI-Resume-Screening-Agent.git
 ```
 
 Go inside the project.
@@ -255,7 +256,7 @@ The CSV file contains the ranked list of candidates.
 
 ### rankings.json
 
-Contains detailed information for every candidate, including:
+The JSON file stores complete candidate information in a structured format, including:
 
 - Candidate Name
 - Resume Filename
@@ -263,7 +264,7 @@ Contains detailed information for every candidate, including:
 - Education
 - Experience
 - Semantic Similarity
-- Individual Scoring Components
+- Individual Score Components
 - Final Score
 - Rank
 - Decision
@@ -305,6 +306,8 @@ Based on the final score, candidates are classified into one of the following ca
 | Below 50 | Reject |
 
 This allows recruiters to quickly identify strong candidates while keeping promising applicants under review.
+
+---
 
 # Assumptions
 
@@ -363,6 +366,7 @@ The application reduces manual effort and provides recruiters with a quick way t
 
 Although there is room for future improvement, the current implementation provides a complete end-to-end resume screening workflow suitable for the challenge.
 
+---
 ---
 
 # License
