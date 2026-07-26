@@ -129,6 +129,20 @@ Install the required packages.
 pip install -r requirements.txt
 ```
 
+## Optional Configuration
+
+The AI recommendation feature uses the Groq API.
+
+Create an environment variable named:
+
+```
+GROQ_API_KEY
+```
+
+and assign your Groq API key.
+
+If the API key is not configured, the resume screening pipeline will continue to work normally, but AI-generated recommendations will be unavailable.
+
 ---
 
 # Project Setup
