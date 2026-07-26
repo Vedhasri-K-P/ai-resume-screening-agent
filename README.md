@@ -229,6 +229,12 @@ The application will:
 
 ---
 
+### Sample Data
+
+The repository includes sample resumes, a sample job description, and sample output files to help reviewers quickly understand and test the application. You can replace the sample resumes and job description with your own files to evaluate different candidates and roles.
+
+---
+
 # Output
 
 The application generates two output files.
