@@ -67,7 +67,6 @@ AI-Resume-Screening-Agent/
 
 The complete workflow of the application is shown below.
 
-```
 Job Description
         │
         ▼
@@ -93,7 +92,50 @@ Rank Candidates
         │
         ▼
 Export Results (CSV & JSON)
-```
+
+---
+
+# System Architecture
+
+The application follows a modular pipeline where each component is responsible for a specific task.
+
+```text
+                 ┌───────────────────────────┐
+                 │   Job Description (JD)    │
+                 └─────────────┬─────────────┘
+                               │
+                               ▼
+                    JD Analyzer (Skills)
+                               │
+                               ▼
+                 ┌───────────────────────────┐
+                 │       Resume Parser       │
+                 │ (PDF / DOCX / TXT Reader) │
+                 └─────────────┬─────────────┘
+                               │
+                               ▼
+                  Resume Information Extractor
+       (Name, Skills, Education, Experience, Projects)
+                               │
+                               ▼
+                    Embedding Generation
+          (SentenceTransformer - all-MiniLM-L6-v2)
+                               │
+                               ▼
+                   Semantic Similarity Engine
+                         (Cosine Similarity)
+                               │
+                               ▼
+                    Weighted Scoring Engine
+                               │
+                               ▼
+                      Candidate Ranking
+                               │
+                               ▼
+          AI Recommendation Engine (Optional - Groq)
+                               │
+                               ▼
+                 CSV & JSON Result Export
 
 ---
 
@@ -103,7 +145,7 @@ Export Results (CSV & JSON)
 - Sentence Transformers
 - Hugging Face
 - Scikit-Learn
-- PyPDF
+- PyPDF2
 - Rich (Console Output)
 - Groq (Optional AI Recommendation)
 
@@ -192,20 +234,40 @@ The application generates two output files.
 
 ### rankings.csv
 
-Contains the ranked list of all candidates.
+The CSV file contains the ranked list of candidates.
 
-Example:
+| Rank | Candidate | File | Final Score | Similarity | Decision |
+|------|-----------|------|------------:|-----------:|----------|
+|1|Ananya Rao|resume1.pdf|70.02|72.06|Shortlist|
+|2|Nikhil Reddy|resume4.pdf|61.25|70.98|Review|
+|3|Arjun Patel|resume6.pdf|56.10|60.39|Review|
 
-| Rank | Candidate | Score | Decision |
-|------|-----------|--------|-----------|
-|1|John Doe|87.25|Shortlist|
+#### Column Description
+
+- **Rank** – Candidate position after ranking
+- **Candidate** – Extracted candidate name
+- **File** – Resume filename
+- **Final Score** – Overall weighted score
+- **Similarity** – Semantic similarity percentage
+- **Decision** – Shortlist, Review or Reject
 
 ---
 
 ### rankings.json
 
-Contains the complete candidate information in JSON format.
+Contains detailed information for every candidate, including:
 
+- Candidate Name
+- Resume Filename
+- Extracted Skills
+- Education
+- Experience
+- Semantic Similarity
+- Individual Scoring Components
+- Final Score
+- Rank
+- Decision
+- AI Recommendation (if enabled)
 ---
 
 # Scoring Method
@@ -257,11 +319,11 @@ This allows recruiters to quickly identify strong candidates while keeping promi
 
 This project works well for the challenge but still has a few limitations.
 
-- Resume parsing depends on the quality of the PDF.
-- Experience calculation can be improved.
-- Name extraction may fail for some resume formats.
-- Currently supports PDF, DOCX and TXT resumes.
+- Resume parsing depends on the quality and layout of the source document.
+- Name extraction may require additional tuning for highly customised resume templates.
+- Experience calculation is based on pattern matching and may not capture all formats.
 - The scoring weights are fixed.
+- AI recommendations require a valid Groq API key.
 
 These can be improved in future versions.
 
@@ -300,3 +362,11 @@ This project demonstrates how AI can simplify the resume screening process by au
 The application reduces manual effort and provides recruiters with a quick way to identify the most relevant candidates.
 
 Although there is room for future improvement, the current implementation provides a complete end-to-end resume screening workflow suitable for the challenge.
+
+---
+
+# License
+
+This project was developed for the ROOMAN Technologies – 24 Hour AI Agent Challenge.
+
+It is intended for educational and demonstration purposes.
