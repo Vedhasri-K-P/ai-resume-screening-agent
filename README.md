@@ -157,13 +157,13 @@ The application follows a modular pipeline where each component is responsible f
 Clone the repository.
 
 ```bash
-git clone https://github.com/<your-username>/AI-Resume-Screening-Agent.git
+git clone https://github.com/Vedhasri-K-P/ai-resume-screening-agent.git
 ```
 
 Go inside the project.
 
 ```bash
-cd AI-Resume-Screening-Agent
+cd ai-resume-screening-agent
 ```
 
 Install the required packages.
@@ -336,6 +336,25 @@ This project works well for the challenge but still has a few limitations.
 
 These can be improved in future versions.
 
+---
+
+# Tradeoffs
+
+During the 24-hour challenge, the focus was on building a complete, reliable, and easy-to-run resume screening pipeline rather than implementing every possible feature.
+
+### Design Choices
+
+- Used **Sentence Transformers (all-MiniLM-L6-v2)** to perform semantic matching between resumes and the Job Description instead of relying only on keyword matching.
+- Used a **weighted scoring system** combining skill match, semantic similarity, education, experience, and projects to produce transparent and explainable rankings.
+- Implemented the **Groq LLM** only for optional AI-generated recommendations while keeping the core ranking process deterministic and reproducible.
+- Chose a **modular architecture** so that each component (parser, extractor, scorer, ranking engine, exporter) can be independently improved or replaced.
+
+### Tradeoffs
+
+- Resume parsing relies on extracted text and may be less accurate for highly formatted or scanned resumes.
+- Skill extraction currently uses predefined matching and can be expanded with more advanced NLP or Named Entity Recognition (NER).
+- Experience and education extraction are rule-based, favouring speed and simplicity over handling every resume format.
+- The application processes resumes sequentially and is intended for demonstration purposes rather than high-volume production deployment.
 ---
 
 # Future Improvements
